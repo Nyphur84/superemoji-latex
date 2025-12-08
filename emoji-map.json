@@ -1,0 +1,2070 @@
+[
+  {
+    "key": "status-ok1",
+    "emoji": "✅",
+    "subsets": ["core", "status"],
+    "comment": "OK / success"
+  },
+  {
+    "key": "status-ok2",
+    "emoji": "✔",
+    "subsets": ["core", "status"],
+    "comment": "Check mark"
+  },
+  {
+    "key": "status-ok3",
+    "emoji": "☑️",
+    "subsets": ["core", "status"],
+    "comment": "Checkbox checked"
+  },
+  {
+    "key": "status-error1",
+    "emoji": "❌",
+    "subsets": ["core", "status"],
+    "comment": "Error / failure"
+  },
+  {
+    "key": "status-error2",
+    "emoji": "✖",
+    "subsets": ["core", "status"],
+    "comment": "Cross mark"
+  },
+  {
+    "key": "status-error3",
+    "emoji": "❎",
+    "subsets": ["core", "status"],
+    "comment": "Negative squared cross"
+  },
+  {
+    "key": "status-question1",
+    "emoji": "❓",
+    "subsets": ["core", "status"],
+    "comment": "Question"
+  },
+  {
+    "key": "status-question2",
+    "emoji": "❔",
+    "subsets": ["core", "status"],
+    "comment": "Question (light)"
+  },
+  {
+    "key": "status-alert1",
+    "emoji": "❗",
+    "subsets": ["core", "status"],
+    "comment": "Alert / exclamation"
+  },
+  {
+    "key": "status-alert2",
+    "emoji": "❕",
+    "subsets": ["core", "status"],
+    "comment": "Alert (light)"
+  },
+  {
+    "key": "status-alert3",
+    "emoji": "⁉️",
+    "subsets": ["core", "status"],
+    "comment": "Question + exclamation"
+  },
+  {
+    "key": "status-warn1",
+    "emoji": "⚠️",
+    "subsets": ["core", "status"],
+    "comment": "Warning"
+  },
+  {
+    "key": "status-blocked1",
+    "emoji": "🚫",
+    "subsets": ["core", "status"],
+    "comment": "Prohibited / blocked"
+  },
+  {
+    "key": "status-blocked2",
+    "emoji": "⛔",
+    "subsets": ["core", "status"],
+    "comment": "No entry"
+  },
+  {
+    "key": "status-blocked3",
+    "emoji": "🛑",
+    "subsets": ["core", "status"],
+    "comment": "Stop"
+  },
+  {
+    "key": "status-recycle1",
+    "emoji": "♻️",
+    "subsets": ["core", "status", "env"],
+    "comment": "Recycle"
+  },
+  {
+    "key": "status-repeat1",
+    "emoji": "🔄",
+    "subsets": ["core", "status"],
+    "comment": "Repeat / reload"
+  },
+  {
+    "key": "status-repeat2",
+    "emoji": "🔁",
+    "subsets": ["core", "status"],
+    "comment": "Repeat single"
+  },
+  {
+    "key": "status-repeat3",
+    "emoji": "🔂",
+    "subsets": ["core", "status"],
+    "comment": "Repeat again"
+  },
+  {
+    "key": "status-repeat4",
+    "emoji": "🔃",
+    "subsets": ["core", "status"],
+    "comment": "Sync"
+  },
+  {
+    "key": "status-up1",
+    "emoji": "🔼",
+    "subsets": ["core", "status"],
+    "comment": "Up"
+  },
+  {
+    "key": "status-down1",
+    "emoji": "🔽",
+    "subsets": ["core", "status"],
+    "comment": "Down"
+  },
+
+  {
+    "key": "log-ok1",
+    "emoji": "✅",
+    "subsets": ["core", "dev", "logs"],
+    "comment": "Log OK"
+  },
+  {
+    "key": "log-warn1",
+    "emoji": "⚠️",
+    "subsets": ["core", "dev", "logs"],
+    "comment": "Log warning"
+  },
+  {
+    "key": "log-error1",
+    "emoji": "❌",
+    "subsets": ["core", "dev", "logs"],
+    "comment": "Log error"
+  },
+  {
+    "key": "log-critical1",
+    "emoji": "🚨",
+    "subsets": ["core", "dev", "logs"],
+    "comment": "Log critical"
+  },
+  {
+    "key": "log-run1",
+    "emoji": "⏳",
+    "subsets": ["core", "dev", "logs"],
+    "comment": "Log running"
+  },
+  {
+    "key": "log-done1",
+    "emoji": "🎉",
+    "subsets": ["core", "dev", "logs"],
+    "comment": "Log done"
+  },
+  {
+    "key": "log-debug1",
+    "emoji": "🐞🔍",
+    "subsets": ["dev", "logs"],
+    "comment": "Debug"
+  },
+  {
+    "key": "log-info1",
+    "emoji": "ℹ️📎",
+    "subsets": ["dev", "logs"],
+    "comment": "Info"
+  },
+  {
+    "key": "log-success1",
+    "emoji": "✅✨",
+    "subsets": ["dev", "logs"],
+    "comment": "Success"
+  },
+  {
+    "key": "log-warning2",
+    "emoji": "⚠️🟨",
+    "subsets": ["dev", "logs"],
+    "comment": "Warning (highlighted)"
+  },
+  {
+    "key": "log-error2",
+    "emoji": "❌🚫",
+    "subsets": ["dev", "logs"],
+    "comment": "Error / blocked"
+  },
+  {
+    "key": "log-critical2",
+    "emoji": "🚨🔥",
+    "subsets": ["dev", "logs"],
+    "comment": "Critical / on fire"
+  },
+
+  {
+    "key": "workflow-start1",
+    "emoji": "🚀",
+    "subsets": ["dev"],
+    "comment": "Workflow start"
+  },
+  {
+    "key": "workflow-progress1",
+    "emoji": "⏳🔄",
+    "subsets": ["dev"],
+    "comment": "In progress"
+  },
+  {
+    "key": "workflow-validate1",
+    "emoji": "🔎🧪",
+    "subsets": ["dev"],
+    "comment": "Validating / testing"
+  },
+  {
+    "key": "workflow-write1",
+    "emoji": "💾📤",
+    "subsets": ["dev"],
+    "comment": "Writing / exporting"
+  },
+  {
+    "key": "workflow-done1",
+    "emoji": "✅🎉",
+    "subsets": ["dev"],
+    "comment": "Done"
+  },
+  {
+    "key": "workflow-rollback1",
+    "emoji": "↩️🧯",
+    "subsets": ["dev"],
+    "comment": "Rollback"
+  },
+
+  {
+    "key": "gis-load1",
+    "emoji": "📥🗺️",
+    "subsets": ["gis"],
+    "comment": "Load layer"
+  },
+  {
+    "key": "gis-select1",
+    "emoji": "🎯",
+    "subsets": ["gis"],
+    "comment": "Select features"
+  },
+  {
+    "key": "gis-filter1",
+    "emoji": "🔎",
+    "subsets": ["gis"],
+    "comment": "Filter"
+  },
+  {
+    "key": "gis-clip1",
+    "emoji": "✂️🗺️",
+    "subsets": ["gis"],
+    "comment": "Clip"
+  },
+  {
+    "key": "gis-buffer1",
+    "emoji": "🫧",
+    "subsets": ["gis"],
+    "comment": "Buffer"
+  },
+  {
+    "key": "gis-dissolve1",
+    "emoji": "🧊➡️💧",
+    "subsets": ["gis"],
+    "comment": "Dissolve"
+  },
+  {
+    "key": "gis-merge1",
+    "emoji": "🔗",
+    "subsets": ["gis"],
+    "comment": "Merge"
+  },
+  {
+    "key": "gis-split1",
+    "emoji": "✂️",
+    "subsets": ["gis"],
+    "comment": "Split"
+  },
+  {
+    "key": "gis-join1",
+    "emoji": "🔗🧾",
+    "subsets": ["gis"],
+    "comment": "Join attributes"
+  },
+  {
+    "key": "gis-intersect1",
+    "emoji": "➕🗺️",
+    "subsets": ["gis"],
+    "comment": "Intersect"
+  },
+  {
+    "key": "gis-union1",
+    "emoji": "🔀🗺️",
+    "subsets": ["gis"],
+    "comment": "Union"
+  },
+  {
+    "key": "gis-snap1",
+    "emoji": "🧲",
+    "subsets": ["gis"],
+    "comment": "Snap"
+  },
+  {
+    "key": "gis-simplify1",
+    "emoji": "🪚",
+    "subsets": ["gis"],
+    "comment": "Simplify"
+  },
+  {
+    "key": "gis-reproject1",
+    "emoji": "🧭",
+    "subsets": ["gis"],
+    "comment": "Reproject"
+  },
+  {
+    "key": "gis-fix1",
+    "emoji": "🛠️",
+    "subsets": ["gis"],
+    "comment": "Fix geometries"
+  },
+  {
+    "key": "gis-geoprocess1",
+    "emoji": "⚙️",
+    "subsets": ["gis"],
+    "comment": "Geoprocessing"
+  },
+    {
+    "key": "map-map1",
+    "emoji": "🗺️",
+    "subsets": ["gis", "core"],
+    "comment": "Map"
+  },
+  {
+    "key": "map-pin1",
+    "emoji": "📍",
+    "subsets": ["gis", "core"],
+    "comment": "Location pin"
+  },
+  {
+    "key": "map-pin2",
+    "emoji": "📌",
+    "subsets": ["gis", "core"],
+    "comment": "Push pin"
+  },
+  {
+    "key": "map-compass1",
+    "emoji": "🧭",
+    "subsets": ["gis", "core"],
+    "comment": "Compass"
+  },
+  {
+    "key": "map-right1",
+    "emoji": "➡️",
+    "subsets": ["core", "nav"],
+    "comment": "Arrow right"
+  },
+  {
+    "key": "map-left1",
+    "emoji": "⬅️",
+    "subsets": ["core", "nav"],
+    "comment": "Arrow left"
+  },
+  {
+    "key": "map-up1",
+    "emoji": "⬆️",
+    "subsets": ["core", "nav"],
+    "comment": "Arrow up"
+  },
+  {
+    "key": "map-down1",
+    "emoji": "⬇️",
+    "subsets": ["core", "nav"],
+    "comment": "Arrow down"
+  },
+  {
+    "key": "map-upright1",
+    "emoji": "↗️",
+    "subsets": ["core", "nav"],
+    "comment": "Arrow up-right"
+  },
+  {
+    "key": "map-downright1",
+    "emoji": "↘️",
+    "subsets": ["core", "nav"],
+    "comment": "Arrow down-right"
+  },
+  {
+    "key": "map-downleft1",
+    "emoji": "↙️",
+    "subsets": ["core", "nav"],
+    "comment": "Arrow down-left"
+  },
+  {
+    "key": "map-upleft1",
+    "emoji": "↖️",
+    "subsets": ["core", "nav"],
+    "comment": "Arrow up-left"
+  },
+  {
+    "key": "map-turnup1",
+    "emoji": "⤴️",
+    "subsets": ["nav"],
+    "comment": "Turn up"
+  },
+  {
+    "key": "map-turndown1",
+    "emoji": "⤵️",
+    "subsets": ["nav"],
+    "comment": "Turn down"
+  },
+  {
+    "key": "map-shuffle1",
+    "emoji": "🔀",
+    "subsets": ["nav"],
+    "comment": "Shuffle / random"
+  },
+  {
+    "key": "map-repeat1",
+    "emoji": "🔄",
+    "subsets": ["core", "nav"],
+    "comment": "Repeat / reload"
+  },
+  {
+    "key": "map-repeat2",
+    "emoji": "🔁",
+    "subsets": ["nav"],
+    "comment": "Repeat single"
+  },
+  {
+    "key": "map-repeat3",
+    "emoji": "🔂",
+    "subsets": ["nav"],
+    "comment": "Repeat again"
+  },
+  {
+    "key": "map-ff1",
+    "emoji": "⏩",
+    "subsets": ["nav"],
+    "comment": "Fast forward"
+  },
+  {
+    "key": "map-rew1",
+    "emoji": "⏪",
+    "subsets": ["nav"],
+    "comment": "Rewind"
+  },
+  {
+    "key": "map-up2",
+    "emoji": "⏫",
+    "subsets": ["nav"],
+    "comment": "Up (fast)"
+  },
+  {
+    "key": "map-down2",
+    "emoji": "⏬",
+    "subsets": ["nav"],
+    "comment": "Down (fast)"
+  },
+  {
+    "key": "map-trafficlight1",
+    "emoji": "🚦",
+    "subsets": ["nav", "traffic"],
+    "comment": "Traffic lights"
+  },
+
+  {
+    "key": "tools-tool1",
+    "emoji": "🛠",
+    "subsets": ["dev", "tools"],
+    "comment": "Tools"
+  },
+  {
+    "key": "tools-wrench1",
+    "emoji": "🔧",
+    "subsets": ["dev", "tools"],
+    "comment": "Wrench"
+  },
+  {
+    "key": "tools-hammer1",
+    "emoji": "🔨",
+    "subsets": ["dev", "tools"],
+    "comment": "Hammer"
+  },
+  {
+    "key": "tools-gear1",
+    "emoji": "⚙️",
+    "subsets": ["dev", "tools"],
+    "comment": "Gear"
+  },
+  {
+    "key": "tools-bolt1",
+    "emoji": "🔩",
+    "subsets": ["dev", "tools"],
+    "comment": "Bolt"
+  },
+  {
+    "key": "tools-toolbox1",
+    "emoji": "🧰",
+    "subsets": ["dev", "tools"],
+    "comment": "Toolbox"
+  },
+  {
+    "key": "tools-screwdriver1",
+    "emoji": "🪛",
+    "subsets": ["dev", "tools"],
+    "comment": "Screwdriver"
+  },
+  {
+    "key": "tools-brick1",
+    "emoji": "🧱",
+    "subsets": ["dev", "tools"],
+    "comment": "Brick / block"
+  },
+  {
+    "key": "tools-magnet1",
+    "emoji": "🧲",
+    "subsets": ["dev", "tools"],
+    "comment": "Magnet / snap"
+  },
+
+  {
+    "key": "code-laptop1",
+    "emoji": "💻",
+    "subsets": ["dev", "code"],
+    "comment": "Laptop"
+  },
+  {
+    "key": "code-desktop1",
+    "emoji": "🖥",
+    "subsets": ["dev", "code"],
+    "comment": "Desktop"
+  },
+  {
+    "key": "code-keyboard1",
+    "emoji": "⌨️",
+    "subsets": ["dev", "code"],
+    "comment": "Keyboard"
+  },
+  {
+    "key": "code-mouse1",
+    "emoji": "🖱",
+    "subsets": ["dev", "code"],
+    "comment": "Mouse"
+  },
+  {
+    "key": "code-trackball1",
+    "emoji": "🖲",
+    "subsets": ["dev", "code"],
+    "comment": "Trackball"
+  },
+  {
+    "key": "code-dev1",
+    "emoji": "🧑‍💻",
+    "subsets": ["dev", "code", "people"],
+    "comment": "Developer (generic)"
+  },
+  {
+    "key": "code-dev2",
+    "emoji": "👨‍💻",
+    "subsets": ["dev", "code", "people"],
+    "comment": "Developer (man)"
+  },
+  {
+    "key": "code-dev3",
+    "emoji": "👩‍💻",
+    "subsets": ["dev", "code", "people"],
+    "comment": "Developer (woman)"
+  },
+  {
+    "key": "code-receipt1",
+    "emoji": "🧾",
+    "subsets": ["dev", "code", "biz"],
+    "comment": "Receipt / log"
+  },
+
+  {
+    "key": "data-cabinet1",
+    "emoji": "🗄",
+    "subsets": ["dev", "data"],
+    "comment": "File cabinet"
+  },
+  {
+    "key": "data-box1",
+    "emoji": "🗃",
+    "subsets": ["dev", "data"],
+    "comment": "Archive box"
+  },
+  {
+    "key": "data-folder1",
+    "emoji": "📁",
+    "subsets": ["dev", "data"],
+    "comment": "Folder"
+  },
+  {
+    "key": "data-folder2",
+    "emoji": "📂",
+    "subsets": ["dev", "data"],
+    "comment": "Open folder"
+  },
+  {
+    "key": "data-divider1",
+    "emoji": "🗂",
+    "subsets": ["dev", "data"],
+    "comment": "Dividers"
+  },
+  {
+    "key": "data-disk1",
+    "emoji": "💾",
+    "subsets": ["dev", "data", "io"],
+    "comment": "Disk / save"
+  },
+  {
+    "key": "data-abacus1",
+    "emoji": "🧮",
+    "subsets": ["dev", "data"],
+    "comment": "Abacus / calculation"
+  },
+  {
+    "key": "data-brick1",
+    "emoji": "🧱",
+    "subsets": ["dev", "data"],
+    "comment": "Block / chunk"
+  },
+  {
+    "key": "data-ice1",
+    "emoji": "🧊",
+    "subsets": ["dev", "data"],
+    "comment": "Frozen data / solid"
+  },
+  {
+    "key": "data-dna1",
+    "emoji": "🧬",
+    "subsets": ["dev", "data"],
+    "comment": "DNA / id / duplicate"
+  },
+  {
+    "key": "data-petri1",
+    "emoji": "🧫",
+    "subsets": ["dev", "data"],
+    "comment": "Sample / experiment"
+  },
+  {
+    "key": "data-receipt2",
+    "emoji": "🧾",
+    "subsets": ["dev", "data"],
+    "comment": "Receipt / record"
+  },
+
+  {
+    "key": "dq-valid1",
+    "emoji": "✅📐",
+    "subsets": ["dev", "data"],
+    "comment": "Valid data"
+  },
+  {
+    "key": "dq-invalid1",
+    "emoji": "❌📐",
+    "subsets": ["dev", "data"],
+    "comment": "Invalid data"
+  },
+  {
+    "key": "dq-duplicate1",
+    "emoji": "🧬",
+    "subsets": ["dev", "data"],
+    "comment": "Duplicate"
+  },
+  {
+    "key": "dq-empty1",
+    "emoji": "🚫📄",
+    "subsets": ["dev", "data"],
+    "comment": "Empty / null"
+  },
+  {
+    "key": "dq-small1",
+    "emoji": "📏⬇️",
+    "subsets": ["dev", "data"],
+    "comment": "Too short / small"
+  },
+  {
+    "key": "dq-outlier1",
+    "emoji": "🎯❓",
+    "subsets": ["dev", "data"],
+    "comment": "Outlier"
+  },
+
+  {
+    "key": "test-lab1",
+    "emoji": "🧪",
+    "subsets": ["dev", "test"],
+    "comment": "Test / experiment"
+  },
+  {
+    "key": "test-microscope1",
+    "emoji": "🔬",
+    "subsets": ["dev", "test"],
+    "comment": "Microscope"
+  },
+  {
+    "key": "test-toolbox1",
+    "emoji": "🧰",
+    "subsets": ["dev", "test"],
+    "comment": "Test tools"
+  },
+  {
+    "key": "test-ok1",
+    "emoji": "✅",
+    "subsets": ["dev", "test"],
+    "comment": "Test passed"
+  },
+  {
+    "key": "test-error1",
+    "emoji": "❌",
+    "subsets": ["dev", "test"],
+    "comment": "Test failed"
+  },
+  {
+    "key": "test-chart1",
+    "emoji": "📈",
+    "subsets": ["dev", "test"],
+    "comment": "Chart up"
+  },
+  {
+    "key": "test-chart2",
+    "emoji": "📉",
+    "subsets": ["dev", "test"],
+    "comment": "Chart down"
+  },
+
+  {
+    "key": "io-read1",
+    "emoji": "📥",
+    "subsets": ["dev", "io"],
+    "comment": "Read / import"
+  },
+  {
+    "key": "io-write1",
+    "emoji": "📤",
+    "subsets": ["dev", "io"],
+    "comment": "Write / output"
+  },
+  {
+    "key": "io-save1",
+    "emoji": "💾",
+    "subsets": ["dev", "io"],
+    "comment": "Save"
+  },
+  {
+    "key": "io-export1",
+    "emoji": "📦",
+    "subsets": ["dev", "io"],
+    "comment": "Export / package"
+  },
+  {
+    "key": "io-append1",
+    "emoji": "➕📄",
+    "subsets": ["dev", "io"],
+    "comment": "Append"
+  },
+  {
+    "key": "io-truncate1",
+    "emoji": "🧹",
+    "subsets": ["dev", "io"],
+    "comment": "Truncate / clean"
+  },
+  {
+    "key": "io-overwrite1",
+    "emoji": "♻️",
+    "subsets": ["dev", "io"],
+    "comment": "Overwrite / recycle"
+  },
+
+  {
+    "key": "time-alarm1",
+    "emoji": "⏰",
+    "subsets": ["core", "time"],
+    "comment": "Alarm"
+  },
+  {
+    "key": "time-hourglass1",
+    "emoji": "⏳",
+    "subsets": ["core", "time"],
+    "comment": "Hourglass"
+  },
+  {
+    "key": "time-stopwatch1",
+    "emoji": "⏱",
+    "subsets": ["core", "time"],
+    "comment": "Stopwatch"
+  },
+  {
+    "key": "time-clock1",
+    "emoji": "🕰",
+    "subsets": ["core", "time"],
+    "comment": "Clock"
+  },
+  {
+    "key": "time-timer1",
+    "emoji": "⏲",
+    "subsets": ["core", "time"],
+    "comment": "Timer"
+  },
+  {
+    "key": "time-calendar1",
+    "emoji": "🗓",
+    "subsets": ["core", "time"],
+    "comment": "Tear-of calendar"
+  },
+  {
+    "key": "time-calendar2",
+    "emoji": "📅",
+    "subsets": ["core", "time"],
+    "comment": "Calendar"
+  },
+  {
+    "key": "perf-start1",
+    "emoji": "⏱️",
+    "subsets": ["dev", "perf"],
+    "comment": "Start timer"
+  },
+  {
+    "key": "perf-end1",
+    "emoji": "⏲️",
+    "subsets": ["dev", "perf"],
+    "comment": "End timer"
+  },
+  {
+    "key": "perf-fast1",
+    "emoji": "⚡",
+    "subsets": ["dev", "perf"],
+    "comment": "Fast"
+  },
+  {
+    "key": "perf-slow1",
+    "emoji": "🐢",
+    "subsets": ["dev", "perf"],
+    "comment": "Slow"
+  },
+  {
+    "key": "perf-speed1",
+    "emoji": "🐇",
+    "subsets": ["dev", "perf"],
+    "comment": "Speed / fast"
+  },
+  {
+    "key": "flag-de",
+    "emoji": "🇩🇪",
+    "subsets": ["flags", "eu"],
+    "comment": "Germany"
+  },
+  {
+    "key": "flag-fr",
+    "emoji": "🇫🇷",
+    "subsets": ["flags", "eu"],
+    "comment": "France"
+  },
+  {
+    "key": "flag-it",
+    "emoji": "🇮🇹",
+    "subsets": ["flags", "eu"],
+    "comment": "Italy"
+  },
+  {
+    "key": "flag-es",
+    "emoji": "🇪🇸",
+    "subsets": ["flags", "eu"],
+    "comment": "Spain"
+  },
+  {
+    "key": "flag-pt",
+    "emoji": "🇵🇹",
+    "subsets": ["flags", "eu"],
+    "comment": "Portugal"
+  },
+  {
+    "key": "flag-nl",
+    "emoji": "🇳🇱",
+    "subsets": ["flags", "eu"],
+    "comment": "Netherlands"
+  },
+  {
+    "key": "flag-be",
+    "emoji": "🇧🇪",
+    "subsets": ["flags", "eu"],
+    "comment": "Belgium"
+  },
+  {
+    "key": "flag-lu",
+    "emoji": "🇱🇺",
+    "subsets": ["flags", "eu"],
+    "comment": "Luxembourg"
+  },
+  {
+    "key": "flag-at",
+    "emoji": "🇦🇹",
+    "subsets": ["flags", "eu"],
+    "comment": "Austria"
+  },
+  {
+    "key": "flag-ch",
+    "emoji": "🇨🇭",
+    "subsets": ["flags", "eu"],
+    "comment": "Switzerland"
+  },
+  {
+    "key": "flag-pl",
+    "emoji": "🇵🇱",
+    "subsets": ["flags", "eu"],
+    "comment": "Poland"
+  },
+  {
+    "key": "flag-cz",
+    "emoji": "🇨🇿",
+    "subsets": ["flags", "eu"],
+    "comment": "Czechia"
+  },
+  {
+    "key": "flag-sk",
+    "emoji": "🇸🇰",
+    "subsets": ["flags", "eu"],
+    "comment": "Slovakia"
+  },
+  {
+    "key": "flag-se",
+    "emoji": "🇸🇪",
+    "subsets": ["flags", "eu"],
+    "comment": "Sweden"
+  },
+  {
+    "key": "flag-no",
+    "emoji": "🇳🇴",
+    "subsets": ["flags", "eu"],
+    "comment": "Norway"
+  },
+  {
+    "key": "flag-dk",
+    "emoji": "🇩🇰",
+    "subsets": ["flags", "eu"],
+    "comment": "Denmark"
+  },
+  {
+    "key": "flag-fi",
+    "emoji": "🇫🇮",
+    "subsets": ["flags", "eu"],
+    "comment": "Finland"
+  },
+  {
+    "key": "flag-ie",
+    "emoji": "🇮🇪",
+    "subsets": ["flags", "eu"],
+    "comment": "Ireland"
+  },
+  {
+    "key": "flag-gb",
+    "emoji": "🇬🇧",
+    "subsets": ["flags", "eu"],
+    "comment": "United Kingdom"
+  },
+  {
+    "key": "flag-eu",
+    "emoji": "🇪🇺",
+    "subsets": ["flags", "eu"],
+    "comment": "European Union"
+  },
+  {
+    "key": "flag-us",
+    "emoji": "🇺🇸",
+    "subsets": ["flags", "americas"],
+    "comment": "United States"
+  },
+  {
+    "key": "flag-ca",
+    "emoji": "🇨🇦",
+    "subsets": ["flags", "americas"],
+    "comment": "Canada"
+  },
+  {
+    "key": "flag-mx",
+    "emoji": "🇲🇽",
+    "subsets": ["flags", "americas"],
+    "comment": "Mexico"
+  },
+  {
+    "key": "flag-br",
+    "emoji": "🇧🇷",
+    "subsets": ["flags", "americas"],
+    "comment": "Brazil"
+  },
+  {
+    "key": "flag-ar",
+    "emoji": "🇦🇷",
+    "subsets": ["flags", "americas"],
+    "comment": "Argentina"
+  },
+  {
+    "key": "flag-cl",
+    "emoji": "🇨🇱",
+    "subsets": ["flags", "americas"],
+    "comment": "Chile"
+  },
+  {
+    "key": "flag-co",
+    "emoji": "🇨🇴",
+    "subsets": ["flags", "americas"],
+    "comment": "Colombia"
+  },
+  {
+    "key": "flag-pe",
+    "emoji": "🇵🇪",
+    "subsets": ["flags", "americas"],
+    "comment": "Peru"
+  },
+  {
+    "key": "flag-uy",
+    "emoji": "🇺🇾",
+    "subsets": ["flags", "americas"],
+    "comment": "Uruguay"
+  },
+  {
+    "key": "flag-za",
+    "emoji": "🇿🇦",
+    "subsets": ["flags", "africa"],
+    "comment": "South Africa"
+  },
+  {
+    "key": "flag-ng",
+    "emoji": "🇳🇬",
+    "subsets": ["flags", "africa"],
+    "comment": "Nigeria"
+  },
+  {
+    "key": "flag-eg",
+    "emoji": "🇪🇬",
+    "subsets": ["flags", "africa"],
+    "comment": "Egypt"
+  },
+  {
+    "key": "flag-ke",
+    "emoji": "🇰🇪",
+    "subsets": ["flags", "africa"],
+    "comment": "Kenya"
+  },
+  {
+    "key": "flag-ma",
+    "emoji": "🇲🇦",
+    "subsets": ["flags", "africa"],
+    "comment": "Morocco"
+  },
+  {
+    "key": "flag-cn",
+    "emoji": "🇨🇳",
+    "subsets": ["flags", "asia"],
+    "comment": "China"
+  },
+  {
+    "key": "flag-jp",
+    "emoji": "🇯🇵",
+    "subsets": ["flags", "asia"],
+    "comment": "Japan"
+  },
+  {
+    "key": "flag-kr",
+    "emoji": "🇰🇷",
+    "subsets": ["flags", "asia"],
+    "comment": "South Korea"
+  },
+  {
+    "key": "flag-in",
+    "emoji": "🇮🇳",
+    "subsets": ["flags", "asia"],
+    "comment": "India"
+  },
+  {
+    "key": "flag-ru",
+    "emoji": "🇷🇺",
+    "subsets": ["flags", "asia", "eu"],
+    "comment": "Russia"
+  },
+  {
+    "key": "flag-tr",
+    "emoji": "🇹🇷",
+    "subsets": ["flags", "asia", "eu"],
+    "comment": "Turkey"
+  },
+  {
+    "key": "flag-sa",
+    "emoji": "🇸🇦",
+    "subsets": ["flags", "asia"],
+    "comment": "Saudi Arabia"
+  },
+  {
+    "key": "flag-ir",
+    "emoji": "🇮🇷",
+    "subsets": ["flags", "asia"],
+    "comment": "Iran"
+  },
+  {
+    "key": "flag-id",
+    "emoji": "🇮🇩",
+    "subsets": ["flags", "asia"],
+    "comment": "Indonesia"
+  },
+  {
+    "key": "flag-au",
+    "emoji": "🇦🇺",
+    "subsets": ["flags", "oceania"],
+    "comment": "Australia"
+  },
+  {
+    "key": "flag-nz",
+    "emoji": "🇳🇿",
+    "subsets": ["flags", "oceania"],
+    "comment": "New Zealand"
+  },
+  {
+    "key": "flag-fj",
+    "emoji": "🇫🇯",
+    "subsets": ["flags", "oceania"],
+    "comment": "Fiji"
+  },
+  {
+    "key": "animal-shark1",
+    "emoji": "🦈",
+    "subsets": ["misc", "animals"],
+    "comment": "Shark"
+  },
+  {
+    "key": "animal-bug1",
+    "emoji": "🐞",
+    "subsets": ["misc", "animals"],
+    "comment": "Ladybird / bug"
+  },
+  {
+    "key": "animal-bug2",
+    "emoji": "🐛",
+    "subsets": ["misc", "animals"],
+    "comment": "Bug / larva"
+  },
+  {
+    "key": "animal-turtle1",
+    "emoji": "🐢",
+    "subsets": ["misc", "animals"],
+    "comment": "Turtle"
+  },
+  {
+    "key": "animal-snake1",
+    "emoji": "🐍",
+    "subsets": ["misc", "animals"],
+    "comment": "Snake"
+  },
+  {
+    "key": "animal-octopus1",
+    "emoji": "🐙",
+    "subsets": ["misc", "animals"],
+    "comment": "Octopus"
+  },
+  {
+    "key": "animal-owl1",
+    "emoji": "🦉",
+    "subsets": ["misc", "animals"],
+    "comment": "Owl"
+  },
+  {
+    "key": "animal-eagle1",
+    "emoji": "🦅",
+    "subsets": ["misc", "animals"],
+    "comment": "Eagle"
+  },
+  {
+    "key": "animal-duck1",
+    "emoji": "🦆",
+    "subsets": ["misc", "animals"],
+    "comment": "Duck"
+  },
+  {
+    "key": "animal-bird1",
+    "emoji": "🐦",
+    "subsets": ["misc", "animals"],
+    "comment": "Bird"
+  },
+  {
+    "key": "animal-bee1",
+    "emoji": "🐝",
+    "subsets": ["misc", "animals"],
+    "comment": "Bee"
+  },
+
+  {
+    "key": "weather-sun1",
+    "emoji": "☀️",
+    "subsets": ["env", "weather"],
+    "comment": "Sun"
+  },
+  {
+    "key": "weather-sun2",
+    "emoji": "🌤",
+    "subsets": ["env", "weather"],
+    "comment": "Sun behind small cloud"
+  },
+  {
+    "key": "weather-cloud1",
+    "emoji": "⛅",
+    "subsets": ["env", "weather"],
+    "comment": "Sun behind cloud"
+  },
+  {
+    "key": "weather-cloud2",
+    "emoji": "🌥",
+    "subsets": ["env", "weather"],
+    "comment": "Sun behind large cloud"
+  },
+  {
+    "key": "weather-cloud3",
+    "emoji": "☁️",
+    "subsets": ["env", "weather"],
+    "comment": "Cloud"
+  },
+  {
+    "key": "weather-rain1",
+    "emoji": "🌧",
+    "subsets": ["env", "weather"],
+    "comment": "Rain"
+  },
+  {
+    "key": "weather-storm1",
+    "emoji": "⛈",
+    "subsets": ["env", "weather"],
+    "comment": "Thunderstorm"
+  },
+  {
+    "key": "weather-thunder1",
+    "emoji": "🌩",
+    "subsets": ["env", "weather"],
+    "comment": "Lightning"
+  },
+  {
+    "key": "weather-snow1",
+    "emoji": "🌨",
+    "subsets": ["env", "weather"],
+    "comment": "Snow"
+  },
+  {
+    "key": "weather-snow2",
+    "emoji": "❄️",
+    "subsets": ["env", "weather"],
+    "comment": "Snowflake"
+  },
+  {
+    "key": "weather-tornado1",
+    "emoji": "🌪",
+    "subsets": ["env", "weather"],
+    "comment": "Tornado"
+  },
+  {
+    "key": "weather-rainbow1",
+    "emoji": "🌈",
+    "subsets": ["env", "weather"],
+    "comment": "Rainbow"
+  },
+  {
+    "key": "weather-wave1",
+    "emoji": "🌊",
+    "subsets": ["env", "weather"],
+    "comment": "Wave"
+  },
+  {
+    "key": "weather-earth1",
+    "emoji": "🌍",
+    "subsets": ["env", "weather"],
+    "comment": "Earth (Europe/Africa)"
+  },
+  {
+    "key": "weather-earth2",
+    "emoji": "🌎",
+    "subsets": ["env", "weather"],
+    "comment": "Earth (Americas)"
+  },
+  {
+    "key": "weather-earth3",
+    "emoji": "🌏",
+    "subsets": ["env", "weather"],
+    "comment": "Earth (Asia/Oceania)"
+  },
+  {
+    "key": "weather-plant1",
+    "emoji": "🌱",
+    "subsets": ["env", "weather"],
+    "comment": "Seedling"
+  },
+  {
+    "key": "weather-plant2",
+    "emoji": "🌿",
+    "subsets": ["env", "weather"],
+    "comment": "Herb"
+  },
+  {
+    "key": "weather-plant3",
+    "emoji": "🍀",
+    "subsets": ["env", "weather"],
+    "comment": "Clover"
+  },
+  {
+    "key": "weather-tree1",
+    "emoji": "🌳",
+    "subsets": ["env", "weather"],
+    "comment": "Tree"
+  },
+  {
+    "key": "weather-cactus1",
+    "emoji": "🌵",
+    "subsets": ["env", "weather"],
+    "comment": "Cactus"
+  },
+  {
+    "key": "weather-palm1",
+    "emoji": "🌴",
+    "subsets": ["env", "weather"],
+    "comment": "Palm tree"
+  },
+  {
+    "key": "weather-flower1",
+    "emoji": "🌸",
+    "subsets": ["env", "weather"],
+    "comment": "Blossom"
+  },
+  {
+    "key": "weather-flower2",
+    "emoji": "🌻",
+    "subsets": ["env", "weather"],
+    "comment": "Sunflower"
+  },
+  {
+    "key": "weather-flower3",
+    "emoji": "🌼",
+    "subsets": ["env", "weather"],
+    "comment": "Flower"
+  },
+
+  {
+    "key": "env-recycle1",
+    "emoji": "♻️",
+    "subsets": ["env"],
+    "comment": "Recycle"
+  },
+  {
+    "key": "env-plant1",
+    "emoji": "🌱",
+    "subsets": ["env"],
+    "comment": "Seedling"
+  },
+  {
+    "key": "env-plant2",
+    "emoji": "🌿",
+    "subsets": ["env"],
+    "comment": "Herb"
+  },
+  {
+    "key": "env-plant3",
+    "emoji": "🍀",
+    "subsets": ["env"],
+    "comment": "Clover"
+  },
+  {
+    "key": "env-tree1",
+    "emoji": "🌳",
+    "subsets": ["env"],
+    "comment": "Tree"
+  },
+  {
+    "key": "env-earth1",
+    "emoji": "🌍",
+    "subsets": ["env"],
+    "comment": "Earth (Europe/Africa)"
+  },
+  {
+    "key": "env-earth2",
+    "emoji": "🌎",
+    "subsets": ["env"],
+    "comment": "Earth (Americas)"
+  },
+  {
+    "key": "env-earth3",
+    "emoji": "🌏",
+    "subsets": ["env"],
+    "comment": "Earth (Asia/Oceania)"
+  },
+
+  {
+    "key": "device-desktop1",
+    "emoji": "🖥",
+    "subsets": ["dev", "devices"],
+    "comment": "Desktop computer"
+  },
+  {
+    "key": "device-laptop1",
+    "emoji": "💻",
+    "subsets": ["dev", "devices"],
+    "comment": "Laptop"
+  },
+  {
+    "key": "device-phone1",
+    "emoji": "📱",
+    "subsets": ["dev", "devices"],
+    "comment": "Mobile phone"
+  },
+  {
+    "key": "device-phone2",
+    "emoji": "📲",
+    "subsets": ["dev", "devices"],
+    "comment": "Phone with arrow"
+  },
+  {
+    "key": "device-printer1",
+    "emoji": "🖨",
+    "subsets": ["dev", "devices"],
+    "comment": "Printer"
+  },
+  {
+    "key": "device-mouse1",
+    "emoji": "🖱",
+    "subsets": ["dev", "devices"],
+    "comment": "Mouse"
+  },
+  {
+    "key": "device-keyboard1",
+    "emoji": "⌨️",
+    "subsets": ["dev", "devices"],
+    "comment": "Keyboard"
+  },
+  {
+    "key": "device-knob1",
+    "emoji": "🎛",
+    "subsets": ["dev", "devices"],
+    "comment": "Control knobs"
+  },
+  {
+    "key": "device-antenna1",
+    "emoji": "📡",
+    "subsets": ["dev", "devices"],
+    "comment": "Satellite antenna"
+  },
+
+  {
+    "key": "legal-scroll1",
+    "emoji": "📜",
+    "subsets": ["biz", "legal"],
+    "comment": "Scroll / document"
+  },
+  {
+    "key": "legal-scales1",
+    "emoji": "⚖️",
+    "subsets": ["biz", "legal"],
+    "comment": "Scales of justice"
+  },
+  {
+    "key": "legal-receipt1",
+    "emoji": "🧾",
+    "subsets": ["biz", "legal"],
+    "comment": "Receipt / record"
+  },
+  {
+    "key": "legal-shield1",
+    "emoji": "🛡️",
+    "subsets": ["biz", "legal"],
+    "comment": "Shield / protection"
+  },
+  {
+    "key": "legal-block1",
+    "emoji": "🚫",
+    "subsets": ["biz", "legal"],
+    "comment": "Prohibited"
+  },
+  {
+    "key": "legal-block2",
+    "emoji": "⛔",
+    "subsets": ["biz", "legal"],
+    "comment": "No entry"
+  },
+  {
+    "key": "legal-lock1",
+    "emoji": "🔒",
+    "subsets": ["biz", "legal"],
+    "comment": "No entry"
+  },
+  {
+    "key": "access-wheelchair1",
+    "emoji": "♿",
+    "subsets": ["accessibility"],
+    "comment": "Wheelchair symbol"
+  },
+  {
+    "key": "access-wheelchair2",
+    "emoji": "🦽",
+    "subsets": ["accessibility"],
+    "comment": "Manual wheelchair"
+  },
+  {
+    "key": "access-cane1",
+    "emoji": "🦯",
+    "subsets": ["accessibility"],
+    "comment": "White cane"
+  },
+  {
+    "key": "access-deaf1",
+    "emoji": "🧏",
+    "subsets": ["accessibility"],
+    "comment": "Deaf person"
+  },
+  {
+    "key": "access-deaf2",
+    "emoji": "🧏‍♂️",
+    "subsets": ["accessibility"],
+    "comment": "Deaf man"
+  },
+  {
+    "key": "access-deaf3",
+    "emoji": "🧏‍♀️",
+    "subsets": ["accessibility"],
+    "comment": "Deaf woman"
+  },
+  {
+    "key": "access-speaking1",
+    "emoji": "🗣️",
+    "subsets": ["accessibility"],
+    "comment": "Speaking head"
+  },
+
+  {
+    "key": "money-moneybag1",
+    "emoji": "💰",
+    "subsets": ["biz", "money"],
+    "comment": "Money bag"
+  },
+  {
+    "key": "money-cash1",
+    "emoji": "💸",
+    "subsets": ["biz", "money"],
+    "comment": "Money with wings"
+  },
+  {
+    "key": "money-card1",
+    "emoji": "💳",
+    "subsets": ["biz", "money"],
+    "comment": "Credit card"
+  },
+  {
+    "key": "money-receipt1",
+    "emoji": "🧾",
+    "subsets": ["biz", "money"],
+    "comment": "Receipt"
+  },
+  {
+    "key": "money-forex1",
+    "emoji": "💱",
+    "subsets": ["biz", "money"],
+    "comment": "Currency exchange"
+  },
+  {
+    "key": "money-chart1",
+    "emoji": "💹",
+    "subsets": ["biz", "money"],
+    "comment": "Chart with yen"
+  },
+  {
+    "key": "money-dollar1",
+    "emoji": "💲",
+    "subsets": ["biz", "money"],
+    "comment": "Dollar sign"
+  },
+  {
+    "key": "money-coin1",
+    "emoji": "🪙",
+    "subsets": ["biz", "money"],
+    "comment": "Coin"
+  },
+  {
+    "key": "money-bank1",
+    "emoji": "🏦",
+    "subsets": ["biz", "money"],
+    "comment": "Bank"
+  },
+
+  {
+    "key": "tasks-board1",
+    "emoji": "📋",
+    "subsets": ["biz", "tasks"],
+    "comment": "Clipboard / task board"
+  },
+  {
+    "key": "tasks-folder1",
+    "emoji": "🗂",
+    "subsets": ["biz", "tasks"],
+    "comment": "Card index / folders"
+  },
+  {
+    "key": "tasks-thread1",
+    "emoji": "🧵",
+    "subsets": ["biz", "tasks"],
+    "comment": "Thread"
+  },
+  {
+    "key": "tasks-block1",
+    "emoji": "🧱",
+    "subsets": ["biz", "tasks"],
+    "comment": "Block / work item"
+  },
+  {
+    "key": "tasks-puzzle1",
+    "emoji": "🧩",
+    "subsets": ["biz", "tasks"],
+    "comment": "Puzzle piece"
+  },
+
+  {
+    "key": "media-art1",
+    "emoji": "🎨",
+    "subsets": ["media"],
+    "comment": "Artist palette"
+  },
+  {
+    "key": "media-frame1",
+    "emoji": "🖼",
+    "subsets": ["media"],
+    "comment": "Framed picture"
+  },
+  {
+    "key": "media-camera1",
+    "emoji": "📷",
+    "subsets": ["media"],
+    "comment": "Camera"
+  },
+  {
+    "key": "media-camera2",
+    "emoji": "📸",
+    "subsets": ["media"],
+    "comment": "Camera with flash"
+  },
+  {
+    "key": "media-video1",
+    "emoji": "🎥",
+    "subsets": ["media"],
+    "comment": "Movie camera"
+  },
+  {
+    "key": "media-clapper1",
+    "emoji": "🎬",
+    "subsets": ["media"],
+    "comment": "Clapper board"
+  },
+  {
+    "key": "media-film1",
+    "emoji": "🎞",
+    "subsets": ["media"],
+    "comment": "Film frames"
+  },
+  {
+    "key": "media-mic1",
+    "emoji": "🎙",
+    "subsets": ["media"],
+    "comment": "Studio microphone"
+  },
+  {
+    "key": "media-slider1",
+    "emoji": "🎚",
+    "subsets": ["media"],
+    "comment": "Level slider"
+  },
+  {
+    "key": "media-knob1",
+    "emoji": "🎛",
+    "subsets": ["media"],
+    "comment": "Control knobs"
+  },
+  {
+    "key": "media-mask1",
+    "emoji": "🎭",
+    "subsets": ["media"],
+    "comment": "Performing arts"
+  },
+  {
+    "key": "media-mic2",
+    "emoji": "🎤",
+    "subsets": ["media"],
+    "comment": "Microphone"
+  },
+  {
+    "key": "media-music1",
+    "emoji": "🎼",
+    "subsets": ["media"],
+    "comment": "Musical score"
+  },
+  {
+    "key": "media-headphones1",
+    "emoji": "🎧",
+    "subsets": ["media"],
+    "comment": "Headphones"
+  },
+    {
+    "key": "dq-warning1",
+    "emoji": "⚠️📊",
+    "subsets": ["dev", "data"],
+    "comment": "Data warning"
+  },
+  {
+    "key": "dq-ok2",
+    "emoji": "✅📊",
+    "subsets": ["dev", "data"],
+    "comment": "Data OK"
+  },
+  {
+    "key": "dq-error2",
+    "emoji": "❌📊",
+    "subsets": ["dev", "data"],
+    "comment": "Data error"
+  },
+  {
+    "key": "dq-missing1",
+    "emoji": "❓📄",
+    "subsets": ["dev", "data"],
+    "comment": "Missing data"
+  },
+  {
+    "key": "dq-review1",
+    "emoji": "👀📄",
+    "subsets": ["dev", "data"],
+    "comment": "Needs review"
+  },
+  {
+    "key": "dq-flagged1",
+    "emoji": "🚩📄",
+    "subsets": ["dev", "data"],
+    "comment": "Flagged row"
+  },
+
+  {
+    "key": "io-import1",
+    "emoji": "⬇️📥",
+    "subsets": ["dev", "io"],
+    "comment": "Import"
+  },
+  {
+    "key": "io-export2",
+    "emoji": "⬆️📤",
+    "subsets": ["dev", "io"],
+    "comment": "Export (arrow)"
+  },
+  {
+    "key": "io-backup1",
+    "emoji": "📦💾",
+    "subsets": ["dev", "io"],
+    "comment": "Backup"
+  },
+  {
+    "key": "io-restore1",
+    "emoji": "📦⬅️",
+    "subsets": ["dev", "io"],
+    "comment": "Restore"
+  },
+  {
+    "key": "io-archive1",
+    "emoji": "🗃📦",
+    "subsets": ["dev", "io"],
+    "comment": "Archive"
+  },
+  {
+    "key": "io-cloud1",
+    "emoji": "☁️📂",
+    "subsets": ["dev", "io"],
+    "comment": "Cloud storage"
+  },
+
+  {
+    "key": "perf-spike1",
+    "emoji": "📈⚡",
+    "subsets": ["dev", "perf"],
+    "comment": "Performance spike"
+  },
+  {
+    "key": "perf-drop1",
+    "emoji": "📉🐢",
+    "subsets": ["dev", "perf"],
+    "comment": "Performance drop / slow"
+  },
+  {
+    "key": "perf-stable1",
+    "emoji": "📊➖",
+    "subsets": ["dev", "perf"],
+    "comment": "Stable performance"
+  },
+  {
+    "key": "log-trace1",
+    "emoji": "📜🐞",
+    "subsets": ["dev", "logs"],
+    "comment": "Trace log"
+  },
+  {
+    "key": "log-audit1",
+    "emoji": "📜🔍",
+    "subsets": ["dev", "logs"],
+    "comment": "Audit log"
+  },
+  {
+    "key": "log-metrics1",
+    "emoji": "📊📡",
+    "subsets": ["dev", "logs"],
+    "comment": "Metrics / telemetry"
+  },
+
+  {
+    "key": "chat-bubble1",
+    "emoji": "💬",
+    "subsets": ["chat"],
+    "comment": "Chat bubble"
+  },
+  {
+    "key": "chat-bubble2",
+    "emoji": "🗨",
+    "subsets": ["chat"],
+    "comment": "Chat bubble alt"
+  },
+  {
+    "key": "chat-bubble3",
+    "emoji": "🗯",
+    "subsets": ["chat"],
+    "comment": "Angry speech bubble"
+  },
+  {
+    "key": "chat-typing1",
+    "emoji": "💬✏️",
+    "subsets": ["chat"],
+    "comment": "Typing"
+  },
+  {
+    "key": "chat-mention1",
+    "emoji": "📎💬",
+    "subsets": ["chat"],
+    "comment": "Mention / attach"
+  },
+  {
+    "key": "chat-reply1",
+    "emoji": "↩️💬",
+    "subsets": ["chat"],
+    "comment": "Reply"
+  },
+  {
+    "key": "chat-thread1",
+    "emoji": "🧵💬",
+    "subsets": ["chat"],
+    "comment": "Threaded conversation"
+  },
+  {
+    "key": "chat-inbox1",
+    "emoji": "📥💬",
+    "subsets": ["chat"],
+    "comment": "Chat inbox"
+  },
+  {
+    "key": "chat-outbox1",
+    "emoji": "📤💬",
+    "subsets": ["chat"],
+    "comment": "Chat outbox"
+  },
+  {
+    "key": "chat-muted1",
+    "emoji": "🔕💬",
+    "subsets": ["chat"],
+    "comment": "Muted chat"
+  },
+
+  {
+    "key": "math-plus1",
+    "emoji": "➕",
+    "subsets": ["math"],
+    "comment": "Plus"
+  },
+  {
+    "key": "math-minus1",
+    "emoji": "➖",
+    "subsets": ["math"],
+    "comment": "Minus"
+  },
+  {
+    "key": "math-times1",
+    "emoji": "✖️",
+    "subsets": ["math"],
+    "comment": "Times"
+  },
+  {
+    "key": "math-divide1",
+    "emoji": "➗",
+    "subsets": ["math"],
+    "comment": "Divide"
+  },
+  {
+    "key": "math-equal1",
+    "emoji": "🟰",
+    "subsets": ["math"],
+    "comment": "Equals"
+  },
+  {
+    "key": "math-not1",
+    "emoji": "🚫",
+    "subsets": ["math"],
+    "comment": "Not / negation"
+  },
+  {
+    "key": "math-approx1",
+    "emoji": "≈",
+    "subsets": ["math"],
+    "comment": "Approximately"
+  },
+  {
+    "key": "math-sum1",
+    "emoji": "➕📊",
+    "subsets": ["math"],
+    "comment": "Sum over data"
+  },
+  {
+    "key": "math-diff1",
+    "emoji": "➖📊",
+    "subsets": ["math"],
+    "comment": "Difference"
+  },
+  {
+    "key": "math-function1",
+    "emoji": "ƒ📊",
+    "subsets": ["math"],
+    "comment": "Function on data"
+  },
+
+  {
+    "key": "ui-play1",
+    "emoji": "▶️",
+    "subsets": ["ui"],
+    "comment": "Play"
+  },
+  {
+    "key": "ui-pause1",
+    "emoji": "⏸️",
+    "subsets": ["ui"],
+    "comment": "Pause"
+  },
+  {
+    "key": "ui-stop1",
+    "emoji": "⏹️",
+    "subsets": ["ui"],
+    "comment": "Stop"
+  },
+  {
+    "key": "ui-record1",
+    "emoji": "⏺️",
+    "subsets": ["ui"],
+    "comment": "Record"
+  },
+  {
+    "key": "ui-next1",
+    "emoji": "⏭️",
+    "subsets": ["ui"],
+    "comment": "Next"
+  },
+  {
+    "key": "ui-prev1",
+    "emoji": "⏮️",
+    "subsets": ["ui"],
+    "comment": "Previous"
+  },
+  {
+    "key": "ui-menu1",
+    "emoji": "☰",
+    "subsets": ["ui"],
+    "comment": "Hamburger menu"
+  },
+  {
+    "key": "ui-settings1",
+    "emoji": "⚙️",
+    "subsets": ["ui"],
+    "comment": "Settings"
+  },
+  {
+    "key": "ui-search1",
+    "emoji": "🔍",
+    "subsets": ["ui"],
+    "comment": "Search"
+  },
+  {
+    "key": "ui-filter1",
+    "emoji": "🔎",
+    "subsets": ["ui"],
+    "comment": "Filter"
+  },
+  {
+    "key": "ui-sort1",
+    "emoji": "🔃",
+    "subsets": ["ui"],
+    "comment": "Sort / shuffle"
+  },
+  {
+    "key": "ui-refresh1",
+    "emoji": "🔄",
+    "subsets": ["ui"],
+    "comment": "Refresh"
+  },
+  {
+    "key": "ui-check1",
+    "emoji": "✅",
+    "subsets": ["ui"],
+    "comment": "Confirm"
+  },
+  {
+    "key": "ui-cross1",
+    "emoji": "❌",
+    "subsets": ["ui"],
+    "comment": "Cancel"
+  },
+  {
+    "key": "ui-info1",
+    "emoji": "ℹ️",
+    "subsets": ["ui"],
+    "comment": "Info"
+  },
+  {
+    "key": "ui-help1",
+    "emoji": "❓",
+    "subsets": ["ui"],
+    "comment": "Help"
+  },
+  {
+    "key": "ui-warn1",
+    "emoji": "⚠️",
+    "subsets": ["ui"],
+    "comment": "Warning"
+  },
+  {
+    "key": "ui-pin1",
+    "emoji": "📌",
+    "subsets": ["ui"],
+    "comment": "Pin"
+  },
+  {
+    "key": "ui-star1",
+    "emoji": "⭐",
+    "subsets": ["ui"],
+    "comment": "Star / favorite"
+  },
+    {
+    "key": "ui-heart1",
+    "emoji": "❤️",
+    "subsets": ["ui"],
+    "comment": "Heart / favorite"
+  },
+    {
+    "key": "ui-bell1",
+    "emoji": "🔔",
+    "subsets": ["ui"],
+    "comment": "Bell / favorite"
+  }
+]

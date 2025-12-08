@@ -1,0 +1,95 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{superemoji}[2025/12/08 Unified emoji macros]
+
+\RequirePackage{etoolbox}
+\RequirePackage{kvoptions}
+
+% ---------- Options ----------
+\SetupKeyvalOptions{
+  family=se,
+  prefix=se@
+}
+
+% style=color (default) or bw
+\DeclareStringOption[color]{style}
+\ProcessKeyvalOptions*
+
+% ---------- Core macros ----------
+\newcommand{\emojiDefine}[2]{%
+  \expandafter\def\csname emoji@#1\endcsname{#2}%
+}
+
+% default \emoji (may be patched later once EmojiFont exists)
+\newcommand{\emoji}[1]{%
+  \ifcsdef{emoji@#1}%
+    {\csname emoji@#1\endcsname}%
+    {?}%
+}
+
+% ---------- Engine detection ----------
+\newif\ifse@luatex
+\newif\ifse@xetex
+\newif\ifse@pdftex
+
+\ifdefined\directlua
+  \se@luatextrue
+\fi
+\ifdefined\XeTeXrevision
+  \se@xetextrue
+\fi
+\ifx\pdfoutput\undefined\else
+  \ifnum\pdfoutput>0\relax
+    \se@pdftextrue
+  \fi
+\fi
+
+% ---------- Font setup for Lua/XeLaTeX ----------
+\ifse@luatex
+  \RequirePackage{fontspec}
+  \newfontfamily\EmojiFont{Segoe UI Emoji} % default bw
+
+  % If style=color: try Noto Color Emoji, else keep Segoe
+  \def\se@stylecolor{color}%
+  \ifx\se@style\se@stylecolor
+    \IfFontExistsTF{Noto Color Emoji}{%
+      \renewfontfamily\EmojiFont{Noto Color Emoji}%
+    }{%
+      \PackageWarning{superemoji}{Noto Color Emoji font not found, using Black&White instead}%
+      \renewfontfamily\EmojiFont{Segoe UI Emoji}%
+    }%
+  \fi
+
+  % Patch \emoji to always use EmojiFont
+  \renewcommand{\emoji}[1]{%
+    \ifcsdef{emoji@#1}%
+      {{\EmojiFont \csname emoji@#1\endcsname}}%
+      {?}%
+  }
+\fi
+
+\ifse@xetex
+  \RequirePackage{fontspec}
+  \newfontfamily\EmojiFont{Segoe UI Emoji} % default bw
+
+  \def\se@stylecolor{color}%
+  \ifx\se@style\se@stylecolor
+    \IfFontExistsTF{Noto Color Emoji}{%
+      \renewfontfamily\EmojiFont{Noto Color Emoji}%
+    }{%
+      \PackageWarning{superemoji}{Noto Color Emoji font not found, using Black&White instead}%
+      \renewfontfamily\EmojiFont{Segoe UI Emoji}%
+    }%
+  \fi
+
+  \renewcommand{\emoji}[1]{%
+    \ifcsdef{emoji@#1}%
+      {{\EmojiFont \csname emoji@#1\endcsname}}%
+      {?}%
+  }
+\fi
+
+% pdfLaTeX: leave \emoji as plain Unicode, user gets whatever their font/viewer supports
+% (no fontspec here)
+
+% ---------- Load generated map ----------
+\input{emoji-map.tex}
