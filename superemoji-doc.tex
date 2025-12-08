@@ -1,0 +1,144 @@
+\documentclass{article}
+
+\usepackage{fontspec}
+\usepackage{etoolbox}       % for \ifcsdef
+\usepackage{superemoji}
+
+% Use an emoji-capable font (adjust if needed)
+\renewfontfamily\EmojiFont{Segoe UI Emoji}
+
+% Make \emoji use the emoji font and the semantic mappings from superemoji.sty
+\renewcommand{\emoji}[1]{%
+	\ifcsdef{emoji@#1}%
+	{{\EmojiFont \csname emoji@#1\endcsname}}%
+	{?}% fallback for unknown keys
+}
+
+\title{The \texttt{superemoji} Package}
+\author{Kai Günther}
+\date{December 8, 2025}
+
+\begin{document}
+	\maketitle
+	
+	\section{Overview}
+	
+	The \texttt{superemoji} package provides semantic emoji commands such as
+	\verb|\emoji{status-ok1}| instead of raw Unicode emoji in the source.
+	Each semantic key (for example \verb|status-ok1| or \verb|emo-joy1|)
+	is mapped to one or more Unicode emoji in an external JSON file that is
+	compiled into \LaTeX{} macros by the package.
+	
+	\section{Loading the package}
+	
+	At minimum, load \texttt{fontspec} and \texttt{superemoji} and select an
+	emoji-capable font. The document should be compiled with Lua\LaTeX{} or
+	Xe\LaTeX{} so that Unicode emoji are supported.
+	
+	\begin{verbatim}
+		\usepackage{fontspec}
+		\usepackage{superemoji}
+		
+		\renewfontfamily\EmojiFont{Segoe UI Emoji}
+		
+		\renewcommand{\emoji}[1]{%
+			\ifcsdef{emoji@#1}%
+			{{\EmojiFont \csname emoji@#1\endcsname}}%
+			{?}%
+		}
+	\end{verbatim}
+	
+	The macro \verb|\emoji{<key>}| looks up a control sequence
+	\verb|\emoji@<key>| defined by the package and typesets it in the
+	\verb|\EmojiFont|. If an unknown key is requested, a simple \verb|?| is
+	shown as a fallback.
+	
+	\section{Semantic keys and subsets}
+	
+	Keys are organized by purpose. Examples:
+	
+	\begin{itemize}
+		\item \textbf{Status and logs:}
+		\verb|status-ok1|, \verb|status-error1|,
+		\verb|log-debug1|, \verb|log-run1|.
+		\item \textbf{GIS workflows:}
+		\verb|gis-select1|, \verb|gis-buffer1|,
+		\verb|gis-snap1|.
+		\item \textbf{Navigation and maps:}
+		\verb|map-right1|, \verb|map-pin1|.
+		\item \textbf{Emotions (\texttt{emo} subset):}
+		\verb|emo-joy1|, \verb|emo-sad1|,
+		\verb|emo-angry1|, \verb|emo-deadinside1|.
+		\item \textbf{Flags:}
+		\verb|flag-de|, \verb|flag-eu|, etc.
+	\end{itemize}
+	
+	Using semantic keys keeps the \LaTeX{} source readable and stable even if
+	the underlying emoji choices change later.
+	
+	\section{Quick start}
+	
+	A minimal quick-start snippet:
+	
+	\begin{verbatim}
+		\usepackage{superemoji}
+		Status: \emoji{status-ok1}
+	\end{verbatim}
+	
+	Rendered in this document, the same commands look like:
+	
+	\medskip
+	\noindent
+	Status: \emoji{status-ok1}
+	
+	\noindent
+	Debug: \emoji{log-debug1}\quad
+	GIS Select: \emoji{gis-select1}\quad
+	Happy: \emoji{emo-joy1}\quad
+	Flag: \emoji{flag-de}.
+	
+	\section{Minimal example}
+	
+	The following minimal document shows how to load the package and use a
+	few semantic emoji commands. Compile with Lua\LaTeX{} or Xe\LaTeX{}.
+	
+	\begin{verbatim}
+		\documentclass{article}
+		\usepackage{fontspec}      % for Unicode emoji
+		\usepackage{etoolbox}      % for \ifcsdef
+		\usepackage{superemoji}    % this package
+		
+		\renewfontfamily\EmojiFont{Segoe UI Emoji}
+		
+		\renewcommand{\emoji}[1]{%
+			\ifcsdef{emoji@#1}%
+			{{\EmojiFont \csname emoji@#1\endcsname}}%
+			{?}%
+		}
+		
+		\begin{document}
+			
+			Status: \emoji{status-ok1}
+			
+			Debug:  \emoji{log-debug1}
+			GIS:    \emoji{gis-select1}
+			
+			Mood:   \emoji{emo-joy1}, \emoji{emo-sad1}, \emoji{emo-deadinside1}
+			
+		\end{document}
+	\end{verbatim}
+	
+	When compiled, this produces:
+	
+	\medskip
+	\noindent
+	Status: \emoji{status-ok1}
+	
+	\noindent
+	Debug: \emoji{log-debug1}\quad
+	GIS: \emoji{gis-select1}
+	
+	\noindent
+	Mood: \emoji{emo-joy1}, \emoji{emo-sad1}, \emoji{emo-deadinside1}
+	
+\end{document}
