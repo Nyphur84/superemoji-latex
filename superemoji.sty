@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{superemoji}[2025/12/08 Unified emoji macros]
+\ProvidesPackage{superemoji}[2025/12/11 Unified emoji macros]
 
 \RequirePackage{etoolbox}
 \RequirePackage{kvoptions}
@@ -43,21 +43,20 @@
   \fi
 \fi
 
-% ---------- Font setup for Lua/XeLaTeX ----------
+% ---------- Font setup for LuaLaTeX ----------
 \ifse@luatex
   \RequirePackage{fontspec}
   \newfontfamily\EmojiFont{Segoe UI Emoji} % default bw
 
-  % If style=color: try Noto Color Emoji, else keep Segoe
-  \def\se@stylecolor{color}%
-  \ifx\se@style\se@stylecolor
-    \IfFontExistsTF{Noto Color Emoji}{%
-      \renewfontfamily\EmojiFont{Noto Color Emoji}%
+  % If style=color: use TwemojiMozilla (COLR/CPAL vector format - works reliably)
+  \ifdefstring{\se@style}{color}{%
+    \IfFontExistsTF{TwemojiMozilla}{%
+      \renewfontfamily\EmojiFont{TwemojiMozilla}[Renderer=HarfBuzz,RawFeature={+colr}]%
     }{%
-      \PackageWarning{superemoji}{Noto Color Emoji font not found, using Black&White instead}%
-      \renewfontfamily\EmojiFont{Segoe UI Emoji}%
+      \PackageWarning{superemoji}{TwemojiMozilla font not found, trying Segoe UI Emoji with color}%
+      \renewfontfamily\EmojiFont{Segoe UI Emoji}[Renderer=HarfBuzz,RawFeature={+colr}]%
     }%
-  \fi
+  }{}
 
   % Patch \emoji to always use EmojiFont
   \renewcommand{\emoji}[1]{%
@@ -67,19 +66,20 @@
   }
 \fi
 
+% ---------- Font setup for XeLaTeX ----------
 \ifse@xetex
   \RequirePackage{fontspec}
   \newfontfamily\EmojiFont{Segoe UI Emoji} % default bw
 
-  \def\se@stylecolor{color}%
-  \ifx\se@style\se@stylecolor
-    \IfFontExistsTF{Noto Color Emoji}{%
-      \renewfontfamily\EmojiFont{Noto Color Emoji}%
+  % If style=color: use TwemojiMozilla (COLR/CPAL vector format)
+  % Note: XeTeX color emoji support is limited compared to LuaTeX
+  \ifdefstring{\se@style}{color}{%
+    \IfFontExistsTF{TwemojiMozilla}{%
+      \renewfontfamily\EmojiFont{TwemojiMozilla}[Renderer=Harfbuzz]%
     }{%
-      \PackageWarning{superemoji}{Noto Color Emoji font not found, using Black&White instead}%
-      \renewfontfamily\EmojiFont{Segoe UI Emoji}%
+      \PackageWarning{superemoji}{TwemojiMozilla font not found, color emoji may not render}%
     }%
-  \fi
+  }{}
 
   \renewcommand{\emoji}[1]{%
     \ifcsdef{emoji@#1}%
