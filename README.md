@@ -1,6 +1,6 @@
 # superemoji-latex
 
-Semantic emoji macros for LaTeX. Use stable keys like `\emoji{status-ok1}` or `\emoji{gis-select1}` instead of raw Unicode emoji in your `.tex` files. The package contains **2037 emoji definitions** organized into semantic categories.
+Semantic emoji macros for LaTeX. Use stable keys like `\emoji{status-ok1}` or `\emoji{gis-select1}` instead of raw Unicode emoji in your `.tex` files. The package contains **2403 emoji definitions** organized into semantic categories.
 
 ## Requirements
 
@@ -9,8 +9,16 @@ Semantic emoji macros for LaTeX. Use stable keys like `\emoji{status-ok1}` or `\
 
 ### Installing Twemoji Mozilla
 
-**Windows:**  
-Download from [Mozilla's GitHub](https://github.com/nicpottier/Twemoji-Mozilla-OS-X/releases) or use the font bundled with Firefox. Install the `.ttf` file.
+The canonical build is `mozilla/twemoji-colr v0.7.0`, packaged on CTAN as **`twemoji-colr`**.
+
+**Recommended (all platforms) — install into your TeX tree** so LuaLaTeX finds it with no system-font install:
+```bash
+tlmgr install twemoji-colr      # TeX Live
+mpm --install=twemoji-colr      # MiKTeX
+```
+
+**Windows (system font):**  
+Download `twemoji-colr.zip` from [CTAN](https://mirrors.ctan.org/fonts/twemoji-colr.zip), extract it, and install `TwemojiMozilla.ttf`.
 
 **Linux (Debian/Ubuntu):**
 ```bash
@@ -27,6 +35,8 @@ sudo dnf install twitter-twemoji-fonts
 brew install --cask font-twemoji
 ```
 
+> **Note:** The Linux/macOS distro packages above are *different builds* of Twemoji (often a newer, SVG-in-OpenType repertoire) than the canonical `mozilla/twemoji-colr v0.7.0` this package targets. Glyph coverage can differ. For guaranteed consistency, prefer the CTAN `twemoji-colr` package.
+
 ### Alternative: Noto Color Emoji
 
 If you prefer Noto Color Emoji, install it and adjust the font name in your document:
@@ -40,8 +50,8 @@ If you prefer Noto Color Emoji, install it and adjust the font name in your docu
 | File | Description |
 |------|-------------|
 | `superemoji.sty` | LaTeX package providing the `\emoji{...}` macro |
-| `emoji-map.tex` | Generated `\emojiDefine{key}{emoji}` definitions (2037 emojis) |
-| `superemoji-doc.pdf` | Complete reference with all 2037 emojis |
+| `emoji-map.tex` | Generated `\emojiDefine{key}{emoji}` definitions (2403 emojis) |
+| `superemoji-doc.pdf` | Complete reference with all 2403 emojis |
 | `README.md` | Installation and usage guide |
 
 ## Installation
@@ -118,6 +128,9 @@ See `superemoji-doc.pdf` for the complete reference.
 - Make sure you're compiling with **LuaLaTeX**, not pdfLaTeX or XeLaTeX
 - Check that `[Renderer=HarfBuzz]` is set in the font definition
 
+**A few specific emoji show as boxes even when everything is set up correctly?**
+Twemoji Mozilla v0.7.0 predates Unicode 15/16, so ~57 newer glyphs have no drawing in this font (e.g. the `*-facing-right` direction variants, shaking-head faces, and some newer symbols/flags). Those entries are tagged `norender-twemoji07` in `emoji-map.json`. They're kept for forward-compatibility — switch to a newer color-emoji font if you need them.
+
 **Unknown key returns `?`**
 - Check that the key exists in `superemoji-doc.pdf`
 - Keys are case-sensitive
@@ -130,6 +143,11 @@ See `superemoji-doc.pdf` for the complete reference.
 ## Contributing
 
 For contributors and maintainers, the source repository includes additional tools for generating and updating emoji definitions. Visit the [GitHub repository](https://github.com/Nyphur84/superemoji-latex) for development documentation.
+
+## Changelog
+
+- **v1.1** (2026-07-11) — 2403 keys: +366 semantic aliases (infra, doc, ci, react, sec, pm, and 19 more families); country flags renamed to `flag-<iso2>`; self-generating 67-page reference doc; generator hardened (UTF-8, `#`-escaping).
+- **v1.0** (2026-01-18) — Initial release (2037 keys).
 
 ## License
 

@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{superemoji}[2026/01/18 v1.0 Unified emoji macros]
+\ProvidesPackage{superemoji}[2026/07/11 v1.1 Unified emoji macros]
 
 \RequirePackage{etoolbox}
 \RequirePackage{kvoptions}
@@ -50,11 +50,11 @@
 
   % If style=color: use TwemojiMozilla (COLR/CPAL vector format - works reliably)
   \ifdefstring{\se@style}{color}{%
-    \IfFontExistsTF{TwemojiMozilla}{%
-      \renewfontfamily\EmojiFont{TwemojiMozilla}[Renderer=HarfBuzz,RawFeature={+colr}]%
+    \IfFontExistsTF{Twemoji Mozilla}{%
+      \renewfontfamily\EmojiFont{Twemoji Mozilla}[Renderer=HarfBuzz]%
     }{%
       \PackageWarning{superemoji}{TwemojiMozilla font not found, trying Segoe UI Emoji with color}%
-      \renewfontfamily\EmojiFont{Segoe UI Emoji}[Renderer=HarfBuzz,RawFeature={+colr}]%
+      \renewfontfamily\EmojiFont{Segoe UI Emoji}[Renderer=HarfBuzz]%
     }%
   }{}
 
@@ -74,8 +74,8 @@
   % If style=color: use TwemojiMozilla (COLR/CPAL vector format)
   % Note: XeTeX color emoji support is limited compared to LuaTeX
   \ifdefstring{\se@style}{color}{%
-    \IfFontExistsTF{TwemojiMozilla}{%
-      \renewfontfamily\EmojiFont{TwemojiMozilla}[Renderer=Harfbuzz]%
+    \IfFontExistsTF{Twemoji Mozilla}{%
+      \renewfontfamily\EmojiFont{Twemoji Mozilla}[Renderer=HarfBuzz]%
     }{%
       \PackageWarning{superemoji}{TwemojiMozilla font not found, color emoji may not render}%
     }%

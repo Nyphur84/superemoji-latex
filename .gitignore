@@ -1,21 +1,15 @@
-# Generated TeX map
-emoji-map.tex
-
-# LaTeX build artifacts
 *.aux
 *.log
 *.out
 *.toc
 *.synctex.gz
-*.nav
-*.snm
 *.fls
 *.fdb_latexmk
-
-# Editor / OS cruft
 .DS_Store
 Thumbs.db
 *.swp
 *.bak
-
-.zip
+*.ttf
+Noto_Color_Emoji.zip
+test-emoji.tex
+*.b64gz
