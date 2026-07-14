@@ -62,8 +62,14 @@ If you prefer Noto Color Emoji, install it and adjust the font name in your docu
 
 ### From CTAN (TeX Live / MiKTeX)
 
-The package will be available through your TeX distribution's package manager once published to CTAN.
+The package is published on CTAN: https://ctan.org/pkg/emojinames
 
+Install it through your TeX distribution's package manager:
+
+```bash
+tlmgr install emojinames   # TeX Live
+mpm --install=emojinames   # MiKTeX
+```
 ### Manual Installation
 
 Place the files somewhere TeX can find them (or next to your document).
