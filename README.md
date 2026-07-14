@@ -51,8 +51,12 @@ If you prefer Noto Color Emoji, install it and adjust the font name in your docu
 |------|-------------|
 | `emojinames.sty` | LaTeX package providing the `\emoji{...}` macro |
 | `emojinames-map.tex` | Generated `\emojiDefine{key}{emoji}` definitions (2403 emojis) |
+| `emoji-map.json` | Master dataset (key / emoji / category); the source all `.tex` files are generated from |
+| `generate_emoji_map.py` | Regenerates `emojinames-map.tex` from `emoji-map.json` |
+| `generate_doc_tables.py` | Regenerates the reference tables from `emoji-map.json` |
 | `emojinames-doc.pdf` | Complete reference with all 2403 emojis |
 | `README.md` | Installation and usage guide |
+| `LICENSE` | Full MIT license text |
 
 ## Installation
 
