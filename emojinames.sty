@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{superemoji}[2026/07/11 v1.1 Unified emoji macros]
+\ProvidesPackage{emojinames}[2026/07/11 v1.1 Unified emoji macros]
 
 \RequirePackage{etoolbox}
 \RequirePackage{kvoptions}
@@ -53,7 +53,7 @@
     \IfFontExistsTF{Twemoji Mozilla}{%
       \renewfontfamily\EmojiFont{Twemoji Mozilla}[Renderer=HarfBuzz]%
     }{%
-      \PackageWarning{superemoji}{TwemojiMozilla font not found, trying Segoe UI Emoji with color}%
+      \PackageWarning{emojinames}{TwemojiMozilla font not found, trying Segoe UI Emoji with color}%
       \renewfontfamily\EmojiFont{Segoe UI Emoji}[Renderer=HarfBuzz]%
     }%
   }{}
@@ -77,7 +77,7 @@
     \IfFontExistsTF{Twemoji Mozilla}{%
       \renewfontfamily\EmojiFont{Twemoji Mozilla}[Renderer=HarfBuzz]%
     }{%
-      \PackageWarning{superemoji}{TwemojiMozilla font not found, color emoji may not render}%
+      \PackageWarning{emojinames}{TwemojiMozilla font not found, color emoji may not render}%
     }%
   }{}
 
@@ -92,4 +92,4 @@
 % (no fontspec here)
 
 % ---------- Load generated map ----------
-\input{emoji-map.tex}
+\input{emojinames-map.tex}

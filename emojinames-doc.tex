@@ -7,7 +7,7 @@
 \usepackage{booktabs}
 \usepackage{xcolor}
 \usepackage{hyperref}
-\usepackage{superemoji}
+\usepackage{emojinames}
 
 % Color emoji font setup (LuaLaTeX required)
 % Using Twemoji Mozilla (COLR/CPAL vector format - works reliably with LuaLaTeX)
@@ -19,9 +19,9 @@
 % Key color
 \definecolor{keycolor}{RGB}{0,100,150}
 
-\title{\Huge The \texttt{superemoji} Package\\[0.5em]\Large Complete Emoji Reference}
+\title{\Huge The \texttt{emojinames} Package\\[0.5em]\Large Complete Emoji Reference}
 \author{Kai Günther}
-\date{January 2026}
+\date{July 2026}
 
 \begin{document}
 	\maketitle
@@ -32,11 +32,11 @@
 	\section{Overview}
 	%===============================================================================
 	
-	The \texttt{superemoji} package provides semantic emoji commands for \LaTeX{} documents.
+	The \texttt{emojinames} package provides semantic emoji commands for \LaTeX{} documents.
 	Instead of inserting raw Unicode emoji characters, you use meaningful keys like
 	\verb|\emoji{status-ok1}| or \verb|\emoji{gis-select1}|.
 	
-	This package contains \textbf{2037} emoji definitions organized into
+	This package contains \textbf{2403} emoji definitions organized into
 	semantic categories.
 	
 	\subsection{Requirements}
@@ -50,7 +50,7 @@
 	\begin{verbatim}
 		\documentclass{article}
 		\usepackage{fontspec}
-		\usepackage{superemoji}
+		\usepackage{emojinames}
 		
 		\newfontfamily\EmojiFont{Twemoji Mozilla}[Renderer=HarfBuzz]
 		\renewcommand{\emoji}[1]{%
@@ -75,7 +75,7 @@
 	Unicode 15/16 codepoints that Twemoji Mozilla v0.7.0 predates and render as
 	boxes -- see Troubleshooting.
 	
-	\input{emoji-doc-generated.tex}
+	\input{emojinames-doc-generated.tex}
 	
 	\section{Troubleshooting}
 	%===============================================================================
@@ -84,23 +84,25 @@
 	\begin{itemize}
 		\item Verify the key exists in \texttt{emoji-map.json}
 		\item Keys are case-sensitive: \verb|status-ok1| $\neq$ \verb|Status-OK1|
-		\item Check that \texttt{emoji-map.tex} is in your TeX path
+		\item Check that \texttt{emojinames-map.tex} is in your TeX path
 	\end{itemize}
 	
 	\subsection{Black \& white instead of color}
 	\begin{itemize}
 		\item Ensure you're using \textbf{LuaLaTeX} (not XeLaTeX or pdfLaTeX)
-		\item Verify Noto Color Emoji font is installed
+		\item Verify \textbf{Twemoji Mozilla} font is installed
 		\item Add \verb|[Renderer=HarfBuzz]| to font declaration
 	\end{itemize}
 	
 	\subsection{Font not found}
-	Install Noto Color Emoji:
+	Install \textbf{Twemoji Mozilla} (canonical \texttt{mozilla/twemoji-colr} v0.7.0). The easiest route is a TeX-tree install:
 	\begin{itemize}
-		\item \textbf{Windows:} Download from Google Fonts, double-click to install
-		\item \textbf{macOS:} \verb|brew install --cask font-noto-color-emoji|
-		\item \textbf{Linux (Debian/Ubuntu):} \verb|sudo apt install fonts-noto-color-emoji|
-		\item \textbf{Linux (Fedora):} \verb|sudo dnf install google-noto-emoji-color-fonts|
+		\item \textbf{TeX Live:} \verb|tlmgr install twemoji-colr|
+		\item \textbf{MiKTeX:} \verb|mpm --install=twemoji-colr|
+		\item \textbf{Windows (system font):} download \verb|twemoji-colr.zip| from CTAN, extract, install \verb|TwemojiMozilla.ttf|
+		\item \textbf{Linux (Debian/Ubuntu):} \verb|sudo apt install fonts-twemoji-svginot|
+		\item \textbf{Linux (Fedora):} \verb|sudo dnf install twitter-twemoji-fonts|
+		\item \textbf{macOS:} \verb|brew install --cask font-twemoji|
 	\end{itemize}
 	
 	\subsection{Compilation errors with special characters}

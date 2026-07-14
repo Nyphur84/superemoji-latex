@@ -1,4 +1,4 @@
-# superemoji-latex
+# emojinames
 
 Semantic emoji macros for LaTeX. Use stable keys like `\emoji{status-ok1}` or `\emoji{gis-select1}` instead of raw Unicode emoji in your `.tex` files. The package contains **2403 emoji definitions** organized into semantic categories.
 
@@ -49,9 +49,9 @@ If you prefer Noto Color Emoji, install it and adjust the font name in your docu
 
 | File | Description |
 |------|-------------|
-| `superemoji.sty` | LaTeX package providing the `\emoji{...}` macro |
-| `emoji-map.tex` | Generated `\emojiDefine{key}{emoji}` definitions (2403 emojis) |
-| `superemoji-doc.pdf` | Complete reference with all 2403 emojis |
+| `emojinames.sty` | LaTeX package providing the `\emoji{...}` macro |
+| `emojinames-map.tex` | Generated `\emojiDefine{key}{emoji}` definitions (2403 emojis) |
+| `emojinames-doc.pdf` | Complete reference with all 2403 emojis |
 | `README.md` | Installation and usage guide |
 
 ## Installation
@@ -76,7 +76,7 @@ Minimal example (**compile with LuaLaTeX**):
 \documentclass{article}
 \usepackage{fontspec}
 \usepackage{etoolbox}
-\usepackage{superemoji}
+\usepackage{emojinames}
 
 \newfontfamily\EmojiFont{Twemoji Mozilla}[Renderer=HarfBuzz]
 \renewcommand{\emoji}[1]{%
@@ -118,7 +118,7 @@ The mapping covers:
 - **UI Controls:** `ui-play1`, `ui-pause1`, `ui-settings1`
 - **And more:** Chat, math, media, accessibility, business/money
 
-See `superemoji-doc.pdf` for the complete reference.
+See `emojinames-doc.pdf` for the complete reference.
 
 ## Troubleshooting
 
@@ -132,7 +132,7 @@ See `superemoji-doc.pdf` for the complete reference.
 Twemoji Mozilla v0.7.0 predates Unicode 15/16, so ~57 newer glyphs have no drawing in this font (e.g. the `*-facing-right` direction variants, shaking-head faces, and some newer symbols/flags). Those entries are tagged `norender-twemoji07` in `emoji-map.json`. They're kept for forward-compatibility — switch to a newer color-emoji font if you need them.
 
 **Unknown key returns `?`**
-- Check that the key exists in `superemoji-doc.pdf`
+- Check that the key exists in `emojinames-doc.pdf`
 - Keys are case-sensitive
 
 **Compilation errors?**
@@ -149,6 +149,10 @@ For contributors and maintainers, the source repository includes additional tool
 - **v1.1** (2026-07-11) — 2403 keys: +366 semantic aliases (infra, doc, ci, react, sec, pm, and 19 more families); country flags renamed to `flag-<iso2>`; self-generating 67-page reference doc; generator hardened (UTF-8, `#`-escaping).
 - **v1.0** (2026-01-18) — Initial release (2037 keys).
 
+## Author
+
+Kai Gunther — kai.guenther84@gmail.com
+
 ## License
 
-MIT License
+MIT License — see `LICENSE`.

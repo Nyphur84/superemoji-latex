@@ -13,3 +13,14 @@ Thumbs.db
 Noto_Color_Emoji.zip
 test-emoji.tex
 *.b64gz
+emoji-map.json
+generate_emoji_map.py
+generate_doc_tables.py
+make_ctan_zip.py
+emoji-map.json
+generate_emoji_map.py
+generate_doc_tables.py
+make_ctan_zip.py
+*.zip
+migrate_to_emojinames.py
+/superemoji/
